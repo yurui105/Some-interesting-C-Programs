@@ -1,0 +1,35 @@
+ CRUSH（_ * LEG，int ARM，_ * FINGER）{
+         _戈尔; for（GORE = 0， -  ARM; ARM> = 0; --ARM）GORE + = FINGER [ARM] * ARM
+     [腿]; 返回戈尔; } _ * BITE（）{_ * BRAIN = calloc（sizeof（_），1 << 17）; int TOE
+  = GETC（标准输入），EYE，颅骨= 0; while（（EYE = getc（stdin））！= EOF）{++ BRAIN [（TOE << 8）+
+ 眼]; ++头骨; TOE = EYE; }（SKULL）for（TOE = 0; TOE <8 << 13; ++ TOE）BRAIN [TOE] / =
+ 头骨; 返回BRAIN; } _ CHEW（_ * GUT，_ BONE [] [1 << 16]）{int GRR; 为（GRR = 0; GRR <
+ 6; ++ GRR）{GUT [GRR + 256 * 256] = powf（1 + expf（-CRUSH（BONE [GRR]，1 << 16，GUT））， -  1）骨
+ [6] [50 + GRR] = GUT [256 * 256 + GRR] *（1-GUT [（8- << 13）+ GRR]）; } BONE [6] [81] = 1 /（1 + expf（ - 
+ CRUSH（GUT +（1 << 16），6，骨[6]）））; 返回骨骼[6] [82] =骨骼[6] [81] *（1.骨骼[6] [81]
+ ），骨[6] [81]; } _ GNAW（_ FLESH，_ LEG [] [2 << 15]，_ * EYE）{int UG，MMM; LEG [6] [13] =
+ 肉CHEW（EYE，LEG）; LEG [6] [14] = LEG [6] [82] * LEG [6] [13]; for（UG = 0; UG <6; ++ UG）{
+ LEG [6] [34] = LEG [6] [UG +（1 << 7）-14] * LEG [6] [7 << 1] * LEG [6] [UG]; （MMM = 0; MMM <4 << 14;
+ ++ MMM）LEG [UG] [MMM] + = LEG [6] [34] *。3 * EYE [MMM]; LEG [6] [UG] + = 3 * LEG [6] [14
+  ] * EYE [256 * 256 + UG]; } return powf（LEG [6] [13]，2）; } _
+  ** EAT（char * TOMB）{DIR * BONE = opendir（TOMB）; INT
+  BRAIN = 0; struct dirent * TOOTH; _ ** BODY = 0; 而
+ （BONE？（TOOTH = readdir（BONE））：0）{if（TOOTH-> d_name [0]
+ ！= 46）{char * MOAN = malloc（strlen（TOMB）+ strlen（TOOTH-> d_name）+1）; sprintf的（
+ MOAN，“％s％s”，TOMB，TOOTH  - > d_name）; if（freopen（MOAN，“r”，stdin））{BODY = realloc（
+ BODY，的sizeof（_ *）*（BRAIN + 1））; BRAIN ++ [BODY] = BITE（）; }}} return BODY = realloc（
+ BODY，（1 + BRAIN）*的sizeof（_ *）），BODY [BRAIN] = 0，BODY; } int main（int GRR，char ** UGH）{
+ _ BRAINS [7] [1 << 16]，*** CORPSES; int PUS，OOZE，UG; for（srand（time（0）），PUS = 0; PUS <
+  7; ++ PUS）for（OOZE = 0; OOZE <4 << 14; ++ OOZE）BRAINS [PUS] [OOZE] = rand（）/（_）RAND_MAX
+   -.5;的fread（脑，的sizeof（BRAINS），1，标准输入）; 如果（* UGH [1] == 45）{GRR- = 2; 尸体
+    = malloc（sizeof（_
+    **）* GRR）; 对于（
+     PUS = 0; PUS <
+    GRR; ++ PUS）CORPSES [PUS] = EAT（UGH [2 + PUS]）; 对于（UG =
+     0; UG <atoi（＆（UGH [1] [1]））; ++ UG）{BRAINS [6] [97] = 0; 对于（PUS
+      = 0; PUS <GRR; ++ PUS）for（OOZE = 0; CORPSES [PUS] [OOZE]; ++ OOZE）BRAINS [6] [
+        97] + = GNAW（1 .-（_）PUS /（GRR-1），BRAINS，CORPSES [PUS] [OOZE]）; fprintf中（
+         stderr，“％d：％f \ n”，UG，BRAINS [6] [97]）; } fwrite（BRAINS，sizeof（
+          BRAINS），1，由于输出）; } else for（UG = 1; UG <GRR; ++ UG）if（freopen（
+              UGH [UG]，“r”，stdin））fprintf（stderr，“％s％f \ n”，UGH [UG]，
+                       CHEW（BITE（），将脑））; 返回0; }
